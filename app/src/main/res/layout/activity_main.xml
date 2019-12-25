@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.bassbosster.slider.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:sliderAnimationDuration="800"
+            app:sliderIndicatorAnimationDuration="1000"
+            app:sliderIndicatorGravity="left|bottom"
+            app:sliderIndicatorMargin="62dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="4dp"
+            app:sliderIndicatorRadius="1.5dp"
+            app:sliderIndicatorSelectedColor="#D17D04"
+            app:sliderIndicatorUnselectedColor="#D17D04"
+            app:sliderScrollTimeInSec="3" />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
